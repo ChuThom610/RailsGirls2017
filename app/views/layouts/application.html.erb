@@ -14,9 +14,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+  <body style="background-color: snow">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -26,27 +26,52 @@
           </button>
           <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" >
           <ul class="nav navbar-nav">
-            <li ><a href="/ideas">Ideas</a></li>
-            <p class="navbar-text pull-right">
-            <% if user_signed_in? %>
-              <%= image_tag current_user.gravatar_url %>
-              Logged in as <strong><%= current_user.user_name || current_user.email %></strong>.
-              <%= link_to 'Edit Password', edit_user_registration_path, :class => 'navbar-link' %> |
-              <%= link_to 'Edit Profile', edit_user_path, :class => 'navbar-link' %> |
-              <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-            <% else %>
-              <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-              <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-            <% end %>
-            <li ><%= link_to 'New Idea', new_idea_path %></li>
+            <li ><%= link_to 'Ideas', ideas_path %></li></li>
+            <li ><%= link_to 'New', new_idea_path %></li>
             <li ><a href="/pages/info">Pages</a></li>
           </ul>
+
+        <ul class="nav navbar-nav pull-right">
+            <li>
+              <% if user_signed_in? %>
+              <div class="navbar-text">
+                <div class="dropdown">
+                  <%= image_tag current_user.gravatar_url, width: '25px' %>
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <strong><%= current_user.user_name || current_user.email %></strong>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><%= link_to 'Edit Password', edit_user_registration_path, :class => 'navbar-link' %></li>
+                    <li><%= link_to 'Edit Profile', edit_user_path, :class => 'navbar-link' %></li>
+                    <li role="separator" class="divider"></li>
+                    <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+                  </ul>
+                </div>
+              </div>
+              <% else %>
+              <form class="navbar-form navbar-right">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm"><span></span>
+                </div>
+                <button type="submit" class="btn btn-success">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>
+                </button>
+                <button type="submit" class="btn btn-success">
+                  <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+                  </button>
+              </form>
+              <% end %>
+            </li>
+        </ul>
         </div>
       </div>
     </nav>
-    
+
     <div class="container">
       <% if notice %>
         <p class="alert alert-success"><%= notice %></p>
@@ -58,10 +83,22 @@
     </div>
     
     <footer>
-      <div class="container">
-        Rails Girls <%= Time.now.year %>
+      <hr>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="copyright col-md-6">
+            <b>
+            © 2017  Rails Girls
+            <p>Địa chỉ: Số 90, ngõ 167 Tây Sơn, Đống Đa,  Hà Nội  <br>
+               Điện thoại: 041.93458.156<br>
+               Fax:  012.98546.197<br>
+               Email: railsgirls2017@gmail.com</p>
+            </b>
+          </div>
+        </div>
       </div>
     </footer>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
   </body>

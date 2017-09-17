@@ -1,2 +1,137 @@
-<h1>Pages#info</h1>
-<p>Find me in app/views/pages/info.html.erb</p>
+
+    <div class="container">
+      <div class="row">
+        <h2 style="text-align: center">ĐƠN ĐĂNG KÝ THAM GIA LỚP HỌC NGOẠI KHÓA MÙA HÈ 2018</h2>
+        <br>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8" style="border-style: double">
+          <form>
+            <div class="form-group" style="margin-top: 15px">
+              <label for="hoTen">1. Họ Tên</label>
+              <input type="text" class="form-control" id="hoTen">
+            </div>
+            <div class="form-group">
+              <label for="gt">2. Giới tính</label>
+              <div class="row" class="input-group">
+                <div class="col-md-6">
+                  <input type="radio" name="gender" value="nu">
+                  <label for="nu"> Nữ</label>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" name="gender" value="nam">
+                  <label for="nam"> Nam</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="ngaySinh">3. Ngày sinh</label>
+                  <input type="date" class="form-control" id="ngaySinh">
+                </div>
+                <div class="col-md-6">
+                  <label for="sdt">4. SĐT</label>
+                  <input type="text" class="form-control" id="sdt">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mail">5. Email</label>
+              <input type="email" class="form-control" id="mail">
+            </div>
+            <div class="form-group">
+              <label for="fb">6. Facebook</label>
+              <input type="text" class="form-control" id="fb">
+            </div>
+            <div class="form-group">
+              <label for="diaChi">7. Địa chỉ</label>
+              <input type="text" class="form-control" id="diaChi">
+            </div>
+            <div class="form-group">
+              <label for="diaChi">8. Sinh viên</label>
+              <div class="row" class="input-group">
+                <div class="col-md-3">
+                  <input type="radio" name="gender" value="n1">
+                  <label for="n1"> Năm 1</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="radio" name="gender" value="n2">
+                  <label for="n2"> Năm 2</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="radio" name="gender" value="n3">
+                  <label for="n3"> Năm 3</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="radio" name="gender" value="n4">
+                  <label for="n4"> Năm 4</label>
+                </div>
+              </div>
+            </div>
+            <div class="row" class="dropdown">
+              <div class="col-md-6">
+                <label for="truong">9. Trường</label>
+                <br>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="true">Đại học Công Nghệ - ĐHQGHN <span class="caret"></span>
+              </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Đại học Bách Khoa Hà Nội</a></li>
+                  <li><a href="#">Đại học Bách Khoa Tp HCM</a></li>
+                  <li><a href="#">Đại học Bưu Chính Viễn Thông</a></li>
+                  <li><a href="#">Đại học Đà Nẵng</a></li>
+                  <li><a href="#">Học viện Kỹ Thuật Quân Sự</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <label for="khoa">10. Khoa</label>
+                <br>
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="true">Công Nghệ Thông Tin <span class="caret"></span>
+              </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Điện Tủ Viễn Thông</a></li>
+                  <li><a href="#">Truyền Thông - Mạng Máy Tính</a></li>
+                  <li><a href="#">Vật Lý Kỹ Thuật</a></li>
+                  <li><a href="#">Tự Động Hóa</a></li>
+                  <li><a href="#">Công Nghệ Na Nô</a></li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="dd">11. Địa điểm mong muốn tham gia lớp ngoại khóa</label>
+              <div class="row" class="input-group">
+                <div class="col-md-6">
+                  <input type="checkbox" value="dd1"> Làng Công Nghệ Cao Hòa Lạc<br>
+                  <input type="checkbox" value="dd2"> Framgia - Tòa nhà 72 LandMark<br>
+                  <input type="checkbox" value="dd3"> KCN SamSung Bắc Ninh<br>
+                  <input type="checkbox" value="dd4"> FSoft
+                </div>
+                <div class="col-md-6">
+                  <input type="checkbox" value="dd5"> Đại Học FPT <br>
+                  <input type="checkbox" value="dd6"> Đại Học Bách Khoa Hà Nội <br>
+                  <input type="checkbox" value="dd7"> Đại Học Đà Nẵng <br>
+                  <input type="checkbox" value="dd8"> Đại Học Quốc Gia Tp Hồ Chí Minh
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="ck">12. Cam kết</label><br>
+              <input type="checkbox"> Tôi đồng ý với mọi điều khoản và nội quy của chương trình
+            </div>
+
+            <div class="g-recaptcha" data-sitekey="#"></div><br>
+            <button type="submit" class="btn btn-primary" style="margin-bottom: 15px">Xác nhận tham gia</button>
+          </form>
+        </div>
+
+        <div class="col-md-4" style="">
+          <img src="https://imgur.com/D7DjxaO.jpg" class="img-responsive" alt="Thi đấu kéo co"><br>
+          <img src="https://imgur.com/u9AuvrS.jpg" class="img-responsive" alt="Giao lưu văn nghệ">
+        </div>
+      </div>
+    </div>
+  
