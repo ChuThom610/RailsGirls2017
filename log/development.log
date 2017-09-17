@@ -7478,3 +7478,83 @@ Processing by IdeasController#index as HTML
 Completed 200 OK in 48ms (Views: 44.1ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 08:11:14 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 51ms (Views: 43.9ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 118.70.81.90 at 2017-09-17 08:11:19 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"goQm9ApuUfDPJ8cNIteECgkyjA2iaxCIorE3JFEc4IAuJy+Jizjh79m3E6D/0wY/ABWJsMti59BTOg5n0bd1Qw=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://demo1-chuthom0610.c9users.io/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 118.70.81.90 at 2017-09-17 08:11:20 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 08:11:20 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 118.70.81.90 at 2017-09-17 08:11:20 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.4/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 118.70.81.90 at 2017-09-17 08:11:29 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kh5OZuK9pa1QJ/uFxPF8Kj5sfgiaw9QmDs6FMBM/Bvs1x5CEEyMMs/XEzY0DmgcWojZcPEyVxAU+ilwM3FT/Mg==", "user"=>{"email"=>"chuthom97@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "chuthom97@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-09-17 08:11:29.671714"], ["last_sign_in_at", "2017-09-17 07:54:38.382281"], ["sign_in_count", 9], ["updated_at", "2017-09-17 08:11:29.673326"], ["id", 1]]
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://demo1-chuthom0610.c9users.io/ideas
+Completed 302 Found in 166ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 08:11:29 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 38ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 08:11:32 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 88ms (Views: 81.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 08:12:06 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.5ms)
+
+
