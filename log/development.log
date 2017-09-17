@@ -7651,3 +7651,63 @@ Processing by IdeasController#index as HTML
 Completed 200 OK in 133ms (Views: 77.1ms | ActiveRecord: 3.8ms)
 
 
+Started GET "/ideas/5" for 118.70.81.90 at 2017-09-17 08:32:19 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering ideas/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."idea_id" = ?[0m  [["idea_id", 5]]
+  Rendered comments/_form.html.erb (3.5ms)
+  Rendered ideas/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 91ms (Views: 52.4ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/comments" for 118.70.81.90 at 2017-09-17 08:32:25 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/LLJTi8cetIrIoMe0XVAhBiC5Xfk6ErrV9Tel+aIwXbGlExtNK3y7liDhKvr9HSWL0TsntrCgdO5l+UUMrYy2A==", "comment"=>{"user_id"=>"1", "user_name"=>"tho", "body"=>"tuỵet", "idea_id"=>"5"}, "commit"=>"Create"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "comments" ("user_name", "body", "idea_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_name", "tho"], ["body", "tuỵet"], ["idea_id", 5], ["created_at", "2017-09-17 08:32:25.240174"], ["updated_at", "2017-09-17 08:32:25.240174"], ["user_id", 1]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://demo1-chuthom0610.c9users.io/comments/2
+Completed 302 Found in 30ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/comments/2" for 118.70.81.90 at 2017-09-17 08:32:25 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/comments/2" for 118.70.81.90 at 2017-09-17 08:32:28 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 37.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/comments/2" for 118.70.81.90 at 2017-09-17 08:32:54 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering comments/show.html.erb within layouts/application
+  Rendered comments/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.6ms)
+
+
