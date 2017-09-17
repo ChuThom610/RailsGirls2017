@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :comments
   root to: redirect('/ideas')
   
@@ -6,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :ideas
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  resource :user, only: [:edit, :update]
 end
