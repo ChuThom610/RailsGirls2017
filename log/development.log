@@ -8327,3 +8327,162 @@ Processing by IdeasController#show as HTML
 Completed 200 OK in 42ms (Views: 35.9ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:03:23 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:04:16 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 46ms (Views: 41.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:04:40 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 38.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:06:58 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 61ms (Views: 52.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:07:17 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 66ms (Views: 52.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:07:29 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 51ms (Views: 46.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:08:08 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:08:20 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas/new" for 118.70.81.90 at 2017-09-17 09:08:27 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (3.9ms)
+  Rendered ideas/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas/new" for 118.70.81.90 at 2017-09-17 09:08:56 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/new.html.erb within layouts/application
+  Rendered ideas/_form.html.erb (5.3ms)
+  Rendered ideas/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 60ms (Views: 54.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/info" for 118.70.81.90 at 2017-09-17 09:09:00 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#info as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pages/info.html.erb within layouts/application
+  Rendered pages/info.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 51ms (Views: 47.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:09:05 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:09:54 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:10:23 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 41ms (Views: 35.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:10:42 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ideas" for 118.70.81.90 at 2017-09-17 09:11:15 +0000
+Cannot render console from 118.70.81.90! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by IdeasController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.6ms)
+
+
